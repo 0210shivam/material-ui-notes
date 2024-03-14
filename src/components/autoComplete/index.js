@@ -1,9 +1,12 @@
+// *AutoComplete Demo //
+
+// *Importing libraries -
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { top100Films } from '../../lib/top100films';
 
-export default function AutocompleteDemo() {
+const AutocompleteDemo = () => {
 
     // *State for the selected value (actual value - from the provided options)
     const [selectedValue, setSelectedValue] = useState(null);
@@ -47,4 +50,6 @@ export default function AutocompleteDemo() {
             renderInput={(params) => <TextField {...params} label="Movie" />}
         />
     );
-}
+};
+
+export default AutocompleteDemo;
