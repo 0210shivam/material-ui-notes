@@ -1,24 +1,22 @@
 import React from 'react';
-import Sample from './components/Sample';
-import { Box, ThemeProvider } from '@mui/system';
+import { Box, ThemeProvider } from '@mui/material';
 import { theme } from './theme';
-import Sample2 from './components/Sample2';
+import AutocompleteDemo from './components/autoComplete';
 
 function App() {
     return (
         <ThemeProvider theme={theme}>
             <Box
                 sx={{
-                    backgroundColor: 'background.poster',
+                    display: 'flex',
                     minHeight: '100vh',
                     flexDirection: 'column',
-                    display: 'flex',
-                    justifyContent: 'center',
+                    justifyContent: 'space-around',
                     alignItems: 'center',
+                    backgroundColor: 'background.poster'
                 }}
             >
-                <Sample />
-                <Sample2 />
+                <AutocompleteDemo />
             </Box>
         </ThemeProvider>
     );
